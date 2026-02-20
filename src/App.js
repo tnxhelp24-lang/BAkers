@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HeroSlider from "./components/HeroSlider";
+import Header from "./components/Header";
+import CakeFestival from "./components/CakeFestival";
+import Menu from "./components/Menu";
+import Stats from "./components/Stats";
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Categories from "./components/Categories";
+import Newsletter from "./components/Newsletter";
+import Team from "./components/Team";
+import Order from "./components/Order";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-sans text-[#3b3b3b] overflow-x-hidden">
+      <Header />
+      <HeroSlider />
+      <About />
+      <CakeFestival />
+      <Categories />
+      <Menu />
+      <Team />
+      <Order />
+      <Stats />
+      <Blog />
+      <Newsletter />
+      <Footer />
     </div>
+
   );
 }
-
-export default App;
