@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     return (
         <footer className="bg-[#0c0c0c] text-gray-400 pt-32">
@@ -79,17 +81,17 @@ const Footer = () => {
                     </p>
 
                     <div className="flex gap-4 items-center">
-                        <a href="#" className="hover:text-[#f68284]">Home</a>
+                        <Link to="#" className="hover:text-[#f68284]">Home</Link>
                         <span>/</span>
-                        <a href="#" className="hover:text-[#f68284]">About</a>
+                        <Link to="#" className="hover:text-[#f68284]">About</Link>
                         <span>/</span>
-                        <a href="#" className="hover:text-[#f68284]">Services</a>
+                        <Link to="#" className="hover:text-[#f68284]">Services</Link>
                         <span>/</span>
-                        <a href="#" className="hover:text-[#f68284]">Portfolio</a>
+                        <Link to="#" className="hover:text-[#f68284]">Portfolio</Link>
                         <span>/</span>
-                        <a href="#" className="hover:text-[#f68284]">Blog</a>
+                        <Link to="#" className="hover:text-[#f68284]">Blog</Link>
                         <span>/</span>
-                        <a href="#" className="hover:text-[#f68284]">Contact</a>
+                        <Link to="#" className="hover:text-[#f68284]">Contact</Link>
                     </div>
                 </div>
             </div>
