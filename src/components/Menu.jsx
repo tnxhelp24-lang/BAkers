@@ -1,5 +1,5 @@
 const Menu = () => (
-    <section className="py-20 bg-[#f9f9f9]">
+    <section id="Features" className="py-20 bg-[#f9f9f9]">
         <div className="max-w-7xl mx-auto px-6 text-center">
             <h3 className="text-4xl font-serif italic text-[#f68284] lowercase">Our Menu</h3>
             <h2 className="text-2xl font-bold uppercase tracking-widest mt-2">Creamy Dishes</h2>

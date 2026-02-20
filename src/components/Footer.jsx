@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    };
     return (
         <footer className="bg-[#0c0c0c] text-gray-400 pt-32">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-16 pb-20">
@@ -11,11 +20,6 @@ const Footer = () => {
                         <span className="text-white text-xl font-bold">Royal</span>
                         <img src="https://demoxml.com/html/royalbakery/images/logo.png" className="h-8" alt="" />
                         <span className="text-white text-xl font-bold">Bakers</span>
-                        {/* <img
-                            src="https://demoxml.com/html/royalbakery/images/logo.png"
-                            alt="logo"
-                            className="h-10"
-                        /> */}
                     </div>
 
                     <p className="italic leading-7 text-sm mb-8 max-w-sm">
@@ -81,17 +85,17 @@ const Footer = () => {
                     </p>
 
                     <div className="flex gap-4 items-center">
-                        <Link to="#" className="hover:text-[#f68284]">Home</Link>
+                        <Link to="/" className="hover:text-[#f68284]">Home</Link>
                         <span>/</span>
-                        <Link to="#" className="hover:text-[#f68284]">About</Link>
+                        <Link to="/" onClick={() => scrollToSection("About")} className="hover:text-[#f68284]">About</Link>
                         <span>/</span>
-                        <Link to="#" className="hover:text-[#f68284]">Services</Link>
+                        <Link to="/" onClick={() => scrollToSection("Services")} className="hover:text-[#f68284]">Services</Link>
                         <span>/</span>
-                        <Link to="#" className="hover:text-[#f68284]">Portfolio</Link>
+                        <Link to="/" onClick={() => scrollToSection("Portfolio")} className="hover:text-[#f68284]">Portfolio</Link>
                         <span>/</span>
-                        <Link to="#" className="hover:text-[#f68284]">Blog</Link>
+                        <Link to="/" onClick={() => scrollToSection("Blog")} className="hover:text-[#f68284]">Blog</Link>
                         <span>/</span>
-                        <Link to="#" className="hover:text-[#f68284]">Contact</Link>
+                        <Link to="/" onClick={() => scrollToSection("Contact")} className="hover:text-[#f68284]">Contact</Link>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <section className="bg-white">
+        <section id="About" className="bg-white">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center px-6">
                 <div className="relative">
                     <img src="https://demoxml.com/html/royalbakery/images/welcome.png" alt="Chef" className="w-full" />

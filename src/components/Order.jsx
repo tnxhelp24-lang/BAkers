@@ -2,7 +2,7 @@ import React from "react";
 
 const Order = () => {
     return (
-        <section className="relative bg-[#f9f9f9] py-24 overflow-hidden">
+        <section id="Order" className="relative bg-[#ffffff] py-24 overflow-hidden">
             {/* Right Image */}
             <div className="absolute right-0 top-0 h-full w-1/2 hidden lg:block">
                 <img

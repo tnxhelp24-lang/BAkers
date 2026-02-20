@@ -12,7 +12,7 @@ import Newsletter from "./components/Newsletter";
 import Team from "./components/Team";
 import Order from "./components/Order";
 
-export default function App() {
+const App = () => {
   return (
     <div className="font-sans text-[#3b3b3b] overflow-x-hidden">
       <Header />
@@ -31,3 +31,5 @@ export default function App() {
 
   );
 }
+
+export default App;

@@ -29,7 +29,7 @@ const posts = [
 
 const Blog = () => {
     return (
-        <section className="bg-[#f5f5f5] py-24">
+        <section id="Blog" className="scroll-mt-24 bg-[#f5f5f5] py-24">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Heading */}
