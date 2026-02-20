@@ -11,7 +11,7 @@ const Header = () => (
             <nav className="hidden lg:flex items-center space-x-8 text-[13px] font-bold uppercase tracking-widest">
                 <Link to="#" className="text-[#f68284] border-l-2 border-[#f68284] pl-3">Home</Link>
                 {["Pages", "Features", "Portfolio", "Blog", "Contact"].map((item) => (
-                    <a key={item} href="#" className="hover:text-[#f68284] transition-colors">{item}</a>
+                    <Link key={item} to="#" className="hover:text-[#f68284] transition-colors">{item}</Link>
                 ))}
                 <button className="bg-[#f68284] px-7 py-3 text-xs font-bold hover:bg-white hover:text-black transition-all">
                     ORDER ONLINE
